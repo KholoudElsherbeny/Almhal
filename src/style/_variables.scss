@@ -1,0 +1,13 @@
+$main_color: #eda41a;
+$second_color: #fa4248;
+$third_color: #3d1308;
+$forth_color: #1c1d20;
+$section-background: #f8f9fc;
+
+@function set-text-color($color) {
+  @if (lightness($color) >70) {
+    @return $main_color;
+  } @else {
+    @return #fff;
+  }
+}
